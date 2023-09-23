@@ -1,0 +1,4 @@
+[+] Add Contact: a mui floating button.
+[+] In ContactList, contacts are selectable for make any action in one go.
+[+] Create(post), Read(get), Update(patch), Delete(delete) contact.
+[+] Bring floating CreateContactForm animatedly, which has a top-right close button. bottom-center save(post) button.
