@@ -2,5 +2,7 @@
 [+] In ContactList, contacts are selectable for make any action in one go.
 [+] Create(post), Read(get), Update(patch), Delete(delete) contact.
 [+] Bring floating CreateContactForm animatedly, which has a top-right close button. bottom-center save(post) button.
+[+] Searching and Sorting(ascending or descending) contacts.
+[+] Create, Read, Update, Delete.
 
 [+] Phone Code json: https://gist.github.com/anubhavshrimal/75f6183458db8c453306f93521e93d37
