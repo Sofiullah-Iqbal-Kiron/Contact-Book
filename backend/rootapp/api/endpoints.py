@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import Contacts
+from .views import ContactRetrieveCreateDestroy
 
 urlpatterns = [
-    path('contacts', Contacts.as_view(), name='contacts')
+    path('contacts', ContactRetrieveCreateDestroy.as_view(), name='contacts')
 ]
