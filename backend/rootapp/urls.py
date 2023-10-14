@@ -1,7 +1,6 @@
 from django.urls import path
 
 from rest_framework import permissions
-from rest_framework.urlpatterns import format_suffix_patterns
 
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
@@ -25,7 +24,7 @@ schema_view = get_schema_view(
 )
 
 documentation_paths = [
-    # path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'), # collision with tick-1
+    path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'), # collision with tick-1
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]
@@ -36,4 +35,3 @@ urlpatterns = [
 
 urlpatterns = documentation_paths + urlpatterns
 urlpatterns = urlpatterns + endpoints.urlpatterns
-urlpatterns = format_suffix_patterns(urlpatterns) # tick-1

@@ -1,4 +1,4 @@
-{% load static %}
+{% load static tailwind_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,16 +9,18 @@
 
         <title>ContactBook: Home</title>
 
-    <link rel="stylesheet" href="{% static 'rootapp/css/index.css' %}">
+        <!-- <link rel="stylesheet" href="{% static 'rootapp/css/index.css' %}"> -->
+        {% tailwind_css %}
 </head>
 
-<body style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-        <h1>
+<body class="text-center">
+        <h1 class="text-4xl font-semibold">
                 Your Contacts!
         </h1>
         <p>
                 You can find all your contacts here. In one go.
         </p>
+        <h1>Hello World. This is hmr in django.</h1>
 </body>
 
 </html>

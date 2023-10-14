@@ -8,3 +8,5 @@ Total:- Material Look and Feel.
 4. MUI (Material UI)
 5. Material Icons
 6. React Hook Form
+7. Axios
+8. Tanstack/React Query
